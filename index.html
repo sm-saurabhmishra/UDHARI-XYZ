@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>time table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- -----------------------------------------navbar -->
+  <nav>
+    <div class="navbar">
+               
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+       
+        <script>
+          document.querySelector('open menu');
+        </script>
+    </div>
+    
+
+    <div id="slide-menu" class="slide-menu">
+        <a href="#privacy-policy">kisse lena hain!</a>
+        <a href="#terms-conditions">kisko dena hain!</a>
+        <a href="#refund-policy">kitna bacha hain!</a>
+
+
+        <img src="brand_tag.png" alt="Sample Image" style="border: none;">
+
+    </div>
+
+    <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+<script>
+  function toggleMenu(){
+    document.body.classList.toggle('menu-open');
+    
+  }
+</script>
+
+  </nav>
+<!-- ---------------------------------------------navbar --> 
+
+
+
+
+
+  <h1 id="heading">where is my money?</span>
+  </h1>
+  <!-- <label for="amount">item Amount(₹) date:</label><br> -->
+<p id="input-heading">
+  item
+  Quantity
+  Amount(₹) 
+  date:</p>
+  <div id="input-text" >
+
+  <input id="input-item" type="text"placeholder="enter your item">
+
+  <input id="input-quantity" type="number" name="amount" step="01" placeholder="00">
+
+
+  <input id="input-amount" type="number" name="amount" step="0.01" placeholder="0.00">
+
+  <input id="input-date"type="date">
+
+  <button onclick="addItem();" id="add-btn">add</button>
+</div>
+<div id="borrow-contain"></div>
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
